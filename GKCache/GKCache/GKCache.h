@@ -21,6 +21,6 @@
 
 #import <Foundation/Foundation.h>
 
-@interface GKCache : NSObject
+@interface GKCache : NSCache
 
 @end
