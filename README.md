@@ -15,7 +15,7 @@ The problem is: <strong>NSCache offers no way to enumerate the stored objects.</
 For situations where you (a) want to use NSCache, and (b) want to iterate through your cached objects, <strong>use GKCache as a replacement for NSCache.</strong> I hope you like it.
 
 Installation (recommended method)
--------------------------------------------------
+---------------------------------
 
 - Add gregkrsak/GKCache as a submodule to your Git repository:
 
@@ -36,6 +36,27 @@ Installation (recommended method)
 ![Image: Adding the library to your project](https://drive.google.com/uc?export=view&id=0B15HSB1iaOZ2OEVMdVpia1JsRVE "Link your project binary with the GKCache library.")
 
 ![Image: Modifying your project's User Headers search path](https://drive.google.com/uc?export=view&id=0B15HSB1iaOZ2UXRFREl4YzJ5VTg "Modify your User Headers search path, if desired.")
+
+- Finally, `#import "GKCache/GKCache.h"`
+
+Usage
+-----
+
+~~~objective-c
+  // Declare and initialize an instance of GKCache.
+  GKCache *myCacheOfFruit = [[GKCache alloc] init];
+  // Add some objects. We'll use string objects, to keep it simple.
+  [myCacheOfFruit setObject:@"Blueberry" forKey:@"favorite-fruit"];
+  [myCacheOfFruit setObject:@"Durian" forKey:@"least-favorite-fruit"];
+  // Sure, we can retrieve them from the cache, if we know their key.
+  id goodFruit = [myCacheOfFruit objectForKey:@"favorite-fruit"];
+  id evilFruit = [myCacheOfFruit objectForKey:@"least-favorite-fruit"];
+  // But NSCache wouldn't let us do this!
+  for (id fruit in myCacheOfFruit.iterableCollection)
+  {
+    NSLog(@"This particular fruit is a %@", fruit);
+  }
+~~~
 
 Want to contribute?
 -------------------
