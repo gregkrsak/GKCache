@@ -31,7 +31,7 @@
 
 #pragma mark - NSCacheDelegate
 
-- (void)cache:(NSCache *)cache willEvictObject:(id)obj;
+- (void)cache:(NSCache*)cache willEvictObject:(id)obj;
 
 #pragma mark - GKCache
 
