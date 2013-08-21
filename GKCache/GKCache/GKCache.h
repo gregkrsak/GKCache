@@ -1,6 +1,6 @@
 //
 //  GKCache.h
-//  GKCache
+//  https://github.com/gregkrsak/GKCache
 //
 //  Created by Greg M. Krsak (greg.krsak@gmail.com) on 8/20/13.
 //
@@ -21,6 +21,30 @@
 
 #import <Foundation/Foundation.h>
 
-@interface GKCache : NSCache
+@interface GKCache : NSCache <NSCacheDelegate>
+
+#pragma mark - NSCache
+
+- (void)setObject:(id)obj forKey:(id)key;
+
+- (void)setObject:(id)obj forKey:(id)key cost:(NSUInteger)num;
+
+#pragma mark - NSCacheDelegate
+
+- (void)cache:(NSCache *)cache willEvictObject:(id)obj;
+
+#pragma mark - GKCache
+
+@property (strong, nonatomic,
+           getter = iterableCollection,
+           setter = setIterableCollection:) NSMutableSet* iterableCollection;
+
+- (id)iterableCollection;
+
+- (void)setIterableCollection:(NSMutableSet*)collection;
+
+- (id)init;
+
+- (id)initWithName:(NSString*)name;
 
 @end
