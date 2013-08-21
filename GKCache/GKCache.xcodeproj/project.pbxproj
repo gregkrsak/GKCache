@@ -10,16 +10,16 @@
 		3B15C5D817C41BA4006F9F17 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3B15C5D717C41BA4006F9F17 /* Foundation.framework */; };
 		3B15C5DD17C41BA4006F9F17 /* GKCache.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 3B15C5DC17C41BA4006F9F17 /* GKCache.h */; };
 		3B15C5DF17C41BA4006F9F17 /* GKCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B15C5DE17C41BA4006F9F17 /* GKCache.m */; };
-		3B15C5E617C41BA4006F9F17 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3B15C5E517C41BA4006F9F17 /* XCTest.framework */; };
-		3B15C5E717C41BA4006F9F17 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3B15C5D717C41BA4006F9F17 /* Foundation.framework */; };
-		3B15C5E917C41BA4006F9F17 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3B15C5E817C41BA4006F9F17 /* UIKit.framework */; };
-		3B15C5EC17C41BA4006F9F17 /* libGKCache.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3B15C5D417C41BA4006F9F17 /* libGKCache.a */; };
-		3B15C5F217C41BA4006F9F17 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 3B15C5F017C41BA4006F9F17 /* InfoPlist.strings */; };
-		3B15C5F417C41BA4006F9F17 /* GKCacheTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B15C5F317C41BA4006F9F17 /* GKCacheTests.m */; };
+		3B1FBBAB17C566F300D2CAA9 /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3B1FBB9E17C5642800D2CAA9 /* SenTestingKit.framework */; };
+		3B1FBBAC17C566F300D2CAA9 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3B15C5E817C41BA4006F9F17 /* UIKit.framework */; };
+		3B1FBBAD17C566F300D2CAA9 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3B15C5D717C41BA4006F9F17 /* Foundation.framework */; };
+		3B1FBBB317C566F300D2CAA9 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 3B1FBBB117C566F300D2CAA9 /* InfoPlist.strings */; };
+		3B1FBBB617C566F300D2CAA9 /* GKCacheTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B1FBBB517C566F300D2CAA9 /* GKCacheTests.m */; };
+		3B1FBBBB17C5679F00D2CAA9 /* libGKCache.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3B15C5D417C41BA4006F9F17 /* libGKCache.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		3B15C5EA17C41BA4006F9F17 /* PBXContainerItemProxy */ = {
+		3B1FBBBC17C567AD00D2CAA9 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 3B15C5CC17C41BA4006F9F17 /* Project object */;
 			proxyType = 1;
@@ -47,13 +47,14 @@
 		3B15C5DB17C41BA4006F9F17 /* GKCache-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "GKCache-Prefix.pch"; sourceTree = "<group>"; };
 		3B15C5DC17C41BA4006F9F17 /* GKCache.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GKCache.h; sourceTree = "<group>"; };
 		3B15C5DE17C41BA4006F9F17 /* GKCache.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GKCache.m; sourceTree = "<group>"; };
-		3B15C5E417C41BA4006F9F17 /* GKCacheTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GKCacheTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		3B15C5E517C41BA4006F9F17 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		3B15C5E817C41BA4006F9F17 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
-		3B15C5EF17C41BA4006F9F17 /* GKCacheTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "GKCacheTests-Info.plist"; sourceTree = "<group>"; };
-		3B15C5F117C41BA4006F9F17 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		3B15C5F317C41BA4006F9F17 /* GKCacheTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GKCacheTests.m; sourceTree = "<group>"; };
-		3B15C5FD17C41F2D006F9F17 /* GKCacheTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GKCacheTests.h; sourceTree = "<group>"; };
+		3B1FBB9E17C5642800D2CAA9 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
+		3B1FBBAA17C566F300D2CAA9 /* GKCacheTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GKCacheTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
+		3B1FBBB017C566F300D2CAA9 /* GKCacheTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "GKCacheTests-Info.plist"; sourceTree = "<group>"; };
+		3B1FBBB217C566F300D2CAA9 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		3B1FBBB417C566F300D2CAA9 /* GKCacheTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GKCacheTests.h; sourceTree = "<group>"; };
+		3B1FBBB517C566F300D2CAA9 /* GKCacheTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GKCacheTests.m; sourceTree = "<group>"; };
+		3B1FBBB717C566F400D2CAA9 /* GKCacheTests-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "GKCacheTests-Prefix.pch"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -65,14 +66,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		3B15C5E117C41BA4006F9F17 /* Frameworks */ = {
+		3B1FBBA617C566F300D2CAA9 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3B15C5EC17C41BA4006F9F17 /* libGKCache.a in Frameworks */,
-				3B15C5E617C41BA4006F9F17 /* XCTest.framework in Frameworks */,
-				3B15C5E917C41BA4006F9F17 /* UIKit.framework in Frameworks */,
-				3B15C5E717C41BA4006F9F17 /* Foundation.framework in Frameworks */,
+				3B1FBBBB17C5679F00D2CAA9 /* libGKCache.a in Frameworks */,
+				3B1FBBAB17C566F300D2CAA9 /* SenTestingKit.framework in Frameworks */,
+				3B1FBBAC17C566F300D2CAA9 /* UIKit.framework in Frameworks */,
+				3B1FBBAD17C566F300D2CAA9 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -83,7 +84,7 @@
 			isa = PBXGroup;
 			children = (
 				3B15C5D917C41BA4006F9F17 /* GKCache */,
-				3B15C5ED17C41BA4006F9F17 /* GKCacheTests */,
+				3B1FBBAE17C566F300D2CAA9 /* GKCacheTests */,
 				3B15C5D617C41BA4006F9F17 /* Frameworks */,
 				3B15C5D517C41BA4006F9F17 /* Products */,
 			);
@@ -93,7 +94,7 @@
 			isa = PBXGroup;
 			children = (
 				3B15C5D417C41BA4006F9F17 /* libGKCache.a */,
-				3B15C5E417C41BA4006F9F17 /* GKCacheTests.xctest */,
+				3B1FBBAA17C566F300D2CAA9 /* GKCacheTests.octest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -101,8 +102,8 @@
 		3B15C5D617C41BA4006F9F17 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				3B1FBB9E17C5642800D2CAA9 /* SenTestingKit.framework */,
 				3B15C5D717C41BA4006F9F17 /* Foundation.framework */,
-				3B15C5E517C41BA4006F9F17 /* XCTest.framework */,
 				3B15C5E817C41BA4006F9F17 /* UIKit.framework */,
 			);
 			name = Frameworks;
@@ -126,21 +127,22 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		3B15C5ED17C41BA4006F9F17 /* GKCacheTests */ = {
+		3B1FBBAE17C566F300D2CAA9 /* GKCacheTests */ = {
 			isa = PBXGroup;
 			children = (
-				3B15C5F317C41BA4006F9F17 /* GKCacheTests.m */,
-				3B15C5FD17C41F2D006F9F17 /* GKCacheTests.h */,
-				3B15C5EE17C41BA4006F9F17 /* Supporting Files */,
+				3B1FBBB417C566F300D2CAA9 /* GKCacheTests.h */,
+				3B1FBBB517C566F300D2CAA9 /* GKCacheTests.m */,
+				3B1FBBAF17C566F300D2CAA9 /* Supporting Files */,
 			);
 			path = GKCacheTests;
 			sourceTree = "<group>";
 		};
-		3B15C5EE17C41BA4006F9F17 /* Supporting Files */ = {
+		3B1FBBAF17C566F300D2CAA9 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				3B15C5EF17C41BA4006F9F17 /* GKCacheTests-Info.plist */,
-				3B15C5F017C41BA4006F9F17 /* InfoPlist.strings */,
+				3B1FBBB017C566F300D2CAA9 /* GKCacheTests-Info.plist */,
+				3B1FBBB117C566F300D2CAA9 /* InfoPlist.strings */,
+				3B1FBBB717C566F400D2CAA9 /* GKCacheTests-Prefix.pch */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -165,23 +167,24 @@
 			productReference = 3B15C5D417C41BA4006F9F17 /* libGKCache.a */;
 			productType = "com.apple.product-type.library.static";
 		};
-		3B15C5E317C41BA4006F9F17 /* GKCacheTests */ = {
+		3B1FBBA917C566F300D2CAA9 /* GKCacheTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 3B15C5FA17C41BA4006F9F17 /* Build configuration list for PBXNativeTarget "GKCacheTests" */;
+			buildConfigurationList = 3B1FBBB817C566F400D2CAA9 /* Build configuration list for PBXNativeTarget "GKCacheTests" */;
 			buildPhases = (
-				3B15C5E017C41BA4006F9F17 /* Sources */,
-				3B15C5E117C41BA4006F9F17 /* Frameworks */,
-				3B15C5E217C41BA4006F9F17 /* Resources */,
+				3B1FBBA517C566F300D2CAA9 /* Sources */,
+				3B1FBBA617C566F300D2CAA9 /* Frameworks */,
+				3B1FBBA717C566F300D2CAA9 /* Resources */,
+				3B1FBBA817C566F300D2CAA9 /* ShellScript */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				3B15C5EB17C41BA4006F9F17 /* PBXTargetDependency */,
+				3B1FBBBD17C567AD00D2CAA9 /* PBXTargetDependency */,
 			);
 			name = GKCacheTests;
 			productName = GKCacheTests;
-			productReference = 3B15C5E417C41BA4006F9F17 /* GKCacheTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
+			productReference = 3B1FBBAA17C566F300D2CAA9 /* GKCacheTests.octest */;
+			productType = "com.apple.product-type.bundle";
 		};
 /* End PBXNativeTarget section */
 
@@ -205,21 +208,37 @@
 			projectRoot = "";
 			targets = (
 				3B15C5D317C41BA4006F9F17 /* GKCache */,
-				3B15C5E317C41BA4006F9F17 /* GKCacheTests */,
+				3B1FBBA917C566F300D2CAA9 /* GKCacheTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		3B15C5E217C41BA4006F9F17 /* Resources */ = {
+		3B1FBBA717C566F300D2CAA9 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3B15C5F217C41BA4006F9F17 /* InfoPlist.strings in Resources */,
+				3B1FBBB317C566F300D2CAA9 /* InfoPlist.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		3B1FBBA817C566F300D2CAA9 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		3B15C5D017C41BA4006F9F17 /* Sources */ = {
@@ -230,29 +249,29 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		3B15C5E017C41BA4006F9F17 /* Sources */ = {
+		3B1FBBA517C566F300D2CAA9 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3B15C5F417C41BA4006F9F17 /* GKCacheTests.m in Sources */,
+				3B1FBBB617C566F300D2CAA9 /* GKCacheTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		3B15C5EB17C41BA4006F9F17 /* PBXTargetDependency */ = {
+		3B1FBBBD17C567AD00D2CAA9 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 3B15C5D317C41BA4006F9F17 /* GKCache */;
-			targetProxy = 3B15C5EA17C41BA4006F9F17 /* PBXContainerItemProxy */;
+			targetProxy = 3B1FBBBC17C567AD00D2CAA9 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		3B15C5F017C41BA4006F9F17 /* InfoPlist.strings */ = {
+		3B1FBBB117C566F300D2CAA9 /* InfoPlist.strings */ = {
 			isa = PBXVariantGroup;
 			children = (
-				3B15C5F117C41BA4006F9F17 /* en */,
+				3B1FBBB217C566F300D2CAA9 /* en */,
 			);
 			name = InfoPlist.strings;
 			sourceTree = "<group>";
@@ -290,7 +309,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
 			};
@@ -320,7 +339,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
 			};
@@ -330,6 +349,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				DSTROOT = /tmp/GKCache.dst;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SYSTEM_APPS_DIR)/Xcode.app/Contents/Developer/Library/Frameworks\"",
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "GKCache/GKCache-Prefix.pch";
 				OTHER_LDFLAGS = "-ObjC";
@@ -342,6 +365,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				DSTROOT = /tmp/GKCache.dst;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SYSTEM_APPS_DIR)/Xcode.app/Contents/Developer/Library/Frameworks\"",
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "GKCache/GKCache-Prefix.pch";
 				OTHER_LDFLAGS = "-ObjC";
@@ -350,39 +377,35 @@
 			};
 			name = Release;
 		};
-		3B15C5FB17C41BA4006F9F17 /* Debug */ = {
+		3B1FBBB917C566F400D2CAA9 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-					"$(DEVELOPER_FRAMEWORKS_DIR)",
+					"\"$(SDKROOT)/Developer/Library/Frameworks\"",
+					"\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "GKCache/GKCache-Prefix.pch";
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
-					"$(inherited)",
-				);
+				GCC_PREFIX_HEADER = "GKCacheTests/GKCacheTests-Prefix.pch";
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				INFOPLIST_FILE = "GKCacheTests/GKCacheTests-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				WRAPPER_EXTENSION = xctest;
+				WRAPPER_EXTENSION = octest;
 			};
 			name = Debug;
 		};
-		3B15C5FC17C41BA4006F9F17 /* Release */ = {
+		3B1FBBBA17C566F400D2CAA9 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-					"$(DEVELOPER_FRAMEWORKS_DIR)",
+					"\"$(SDKROOT)/Developer/Library/Frameworks\"",
+					"\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "GKCache/GKCache-Prefix.pch";
+				GCC_PREFIX_HEADER = "GKCacheTests/GKCacheTests-Prefix.pch";
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				INFOPLIST_FILE = "GKCacheTests/GKCacheTests-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				WRAPPER_EXTENSION = xctest;
+				WRAPPER_EXTENSION = octest;
 			};
 			name = Release;
 		};
@@ -405,12 +428,13 @@
 				3B15C5F917C41BA4006F9F17 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
-		3B15C5FA17C41BA4006F9F17 /* Build configuration list for PBXNativeTarget "GKCacheTests" */ = {
+		3B1FBBB817C566F400D2CAA9 /* Build configuration list for PBXNativeTarget "GKCacheTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				3B15C5FB17C41BA4006F9F17 /* Debug */,
-				3B15C5FC17C41BA4006F9F17 /* Release */,
+				3B1FBBB917C566F400D2CAA9 /* Debug */,
+				3B1FBBBA17C566F400D2CAA9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 		};

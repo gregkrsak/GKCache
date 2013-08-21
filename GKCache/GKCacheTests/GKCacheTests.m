@@ -23,9 +23,9 @@
 
 #import "GKCache.h"
 
-#import <XCTest/XCTest.h>
+#import <SenTestingKit/SenTestingKit.h>
 
-@interface GKCacheTests : XCTestCase
+@interface GKCacheTests : SenTestCase
 
 @end
 
@@ -49,19 +49,19 @@
 - (void)test_IsNotNilWhenInitialized
 {
   self->_cacheUnderTest = [self->_cacheUnderTest init];
-  XCTAssertNotNil(self->_cacheUnderTest, msg_IsNotNilWhenInitialized);
+  STAssertNotNil(self->_cacheUnderTest, msg_IsNotNilWhenInitialized);
 }
 
 - (void)test_IsNotNilWhenInitializedWithName
 {
   self->_cacheUnderTest = [self->_cacheUnderTest initWithName:TestCacheName];
-  XCTAssertNotNil(self->_cacheUnderTest, msg_IsNotNilWhenInitializedWithName);
+  STAssertNotNil(self->_cacheUnderTest, msg_IsNotNilWhenInitializedWithName);
 }
 
 - (void)test_IterableCollectionIsNotNilWhenInitialized
 {
   self->_cacheUnderTest = [self->_cacheUnderTest init];
-  XCTAssertNotNil(self->_cacheUnderTest.iterableCollection, msg_IterableCollectionIsNotNilWhenInitialized);
+  STAssertNotNil(self->_cacheUnderTest.iterableCollection, msg_IterableCollectionIsNotNilWhenInitialized);
 }
 
 - (void)test_NameIsSetProperlyWhenInitializedWithName
@@ -69,7 +69,7 @@
   self->_cacheUnderTest = [self->_cacheUnderTest initWithName:TestCacheName];
   NSString* expected = TestCacheName;
   NSString* actual = self->_cacheUnderTest.name;
-  XCTAssertEqualObjects(actual, expected, msg_NameIsSetProperlyWhenInitializedWithName);
+  STAssertEqualObjects(actual, expected, msg_NameIsSetProperlyWhenInitializedWithName);
 }
 
 - (void)test_DelegateIsSetToSelf
@@ -77,7 +77,7 @@
   self->_cacheUnderTest = [self->_cacheUnderTest init];
   GKCache* expected = self->_cacheUnderTest;
   GKCache* actual = self->_cacheUnderTest.delegate;
-  XCTAssertEqual(actual, expected, msg_DelegateIsSetToSelf);
+  STAssertEquals(actual, expected, msg_DelegateIsSetToSelf);
 }
 
 - (void)test_CanSetObjectForKeyInSelfAndRetrieveFromIterableCollection
@@ -86,7 +86,7 @@
   [self->_cacheUnderTest setObject:TestCacheObject forKey:TestCacheKey];
   NSString* expected = TestCacheObject;
   NSString* actual = [[self->_cacheUnderTest.iterableCollection objectEnumerator] nextObject];
-  XCTAssertEqualObjects(actual, expected, msg_CanSetObjectForKeyInSelfAndRetrieveFromIterableCollection);
+  STAssertEqualObjects(actual, expected, msg_CanSetObjectForKeyInSelfAndRetrieveFromIterableCollection);
 }
 
 - (void)test_CanSetObjectForKeyWithCostInSelfAndRetrieveFromIterableCollection
@@ -95,7 +95,7 @@
   [self->_cacheUnderTest setObject:TestCacheObject forKey:TestCacheKey cost:TestCacheCost];
   NSString* expected = TestCacheObject;
   NSString* actual = [[self->_cacheUnderTest.iterableCollection objectEnumerator] nextObject];
-  XCTAssertEqualObjects(actual, expected, msg_CanSetObjectForKeyWithCostInSelfAndRetrieveFromIterableCollection);
+  STAssertEqualObjects(actual, expected, msg_CanSetObjectForKeyWithCostInSelfAndRetrieveFromIterableCollection);
 }
 
 - (void)test_CanRemoveObjectInSelfAndNotRetrieveFromIterableCollection
@@ -105,7 +105,7 @@
   [self->_cacheUnderTest removeObjectForKey:TestCacheKey]; // remove
   NSString* expected = nil;
   NSString* actual = [[self->_cacheUnderTest.iterableCollection objectEnumerator] nextObject];
-  XCTAssertEqualObjects(actual, expected, msg_CanRemoveObjectInSelfAndNotRetrieveFromIterableCollection);
+  STAssertEqualObjects(actual, expected, msg_CanRemoveObjectInSelfAndNotRetrieveFromIterableCollection);
 }
 
 - (void)test_CanRemoveAllObjectsInSelfAndNotRetrieveFromIterableCollection
@@ -115,7 +115,7 @@
   [self->_cacheUnderTest removeAllObjects]; // remove
   NSString* expected = nil;
   NSString* actual = [[self->_cacheUnderTest.iterableCollection objectEnumerator] nextObject];
-  XCTAssertEqualObjects(actual, expected, msg_CanRemoveAllObjectsInSelfAndNotRetrieveFromIterableCollection);
+  STAssertEqualObjects(actual, expected, msg_CanRemoveAllObjectsInSelfAndNotRetrieveFromIterableCollection);
 }
 
 @end
