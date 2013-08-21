@@ -1,4 +1,71 @@
 GKCache
 =======
+This is an iterable subclass of NSCache.
 
-An iterable version of Cocoa's NSCache.
+* [NSCache Class Reference]
+
+Why is this cool?
+-----------------
+<strong>NSCache is a key-value container, similar to NSDictionary.</strong> It's useful for caching non-critical, expensive-to-create data that doesn't need a lot of persistence.
+
+What's really interesting is, <strong>NSCache will purge your data if memory is running low.</strong> That might come in handy if you don't want to run out of memory just because of your cache.
+
+The problem is: <strong>NSCache offers no way to enumerate the stored objects.</strong> Why? I don't know.
+
+For situations where you (a) want to use NSCache, and (b) want to iterate through your cached objects, <strong>use GKCache as a replacement for NSCache.</strong> I hope you like it.
+
+Installation (recommended method)
+-------------------------------------------------
+
+- Add gregkrsak/GKCache as a submodule to your Git repository:
+
+~~~bash
+  git submodule add git@github.com:gregkrsak/GKCache.git ./GKCache
+  git submodule update --init
+  git commit ./GKCache -m 'Added submodule gregkrsak/GKCache'
+~~~
+
+![Image: Console output](https://drive.google.com/uc?export=view&id=0B15HSB1iaOZ2b1JjT0pTaU1zQWs "Oohh.. red. Ahh.")
+
+- Drag GKCache.xcodeproj into your Xcode project
+
+![Image: Dragging the subproject into Xcode](https://drive.google.com/uc?export=view&id=0B15HSB1iaOZ2YUt2LUw2MEEtSmM "Be sure you grab the GKCache project file, and not an operating system folder.")
+
+- Point your project to the new files
+
+![Image: Adding the library to your project](https://drive.google.com/uc?export=view&id=0B15HSB1iaOZ2OEVMdVpia1JsRVE "Link your project binary with the GKCache library.")
+
+![Image: Modifying your project's User Headers search path](https://drive.google.com/uc?export=view&id=0B15HSB1iaOZ2UXRFREl4YzJ5VTg "Modify your User Headers search path, if desired.")
+
+Want to contribute?
+-------------------
+
+Go ahead and fork me; pull requests are welcome.
+
+Additional resources
+--------------------
+
+* [How do I use Git?]
+
+* [Informal submodule tutorial]
+
+* [Formal submodule documentation]
+
+* [Forking and pull requests]
+
+* [Download GitHub for Windows]
+
+* [Download GitHub for Mac]
+
+* [Download Git for Linux]
+
+* http://en.wikipedia.org/wiki/Git_(software)
+
+  [NSCache Class Reference]: https://developer.apple.com/library/ios/documentation/cocoa/reference/NSCache_Class/Reference/Reference.html
+  [Informal submodule tutorial]: http://blog.jacius.info/git-submodule-cheat-sheet/
+  [Formal submodule documentation]: http://git-scm.com/book/en/Git-Tools-Submodules
+  [Forking and pull requests]: https://help.github.com/articles/using-pull-requests
+  [How do I use Git?]: http://git-scm.com/documentation
+  [Download GitHub for Windows]: http://windows.github.com/
+  [Download GitHub for Mac]: http://mac.github.com/
+  [Download Git for Linux]: http://git-scm.com/download/linux
