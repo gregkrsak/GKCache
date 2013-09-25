@@ -48,7 +48,7 @@
 
 @synthesize iterableCollection = _iterableCollection;
 
-- (id)iterableCollection
+- (NSMutableSet*)iterableCollection
 {
   return self->_iterableCollection;
 }
