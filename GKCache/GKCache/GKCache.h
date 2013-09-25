@@ -39,7 +39,7 @@
            getter = iterableCollection,
            setter = setIterableCollection:) NSMutableSet* iterableCollection;
 
-- (id)iterableCollection;
+- (NSMutableSet*)iterableCollection;
 
 - (void)setIterableCollection:(NSMutableSet*)collection;
 
