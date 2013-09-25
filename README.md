@@ -48,7 +48,7 @@ Usage
   // Add some objects. We'll use string objects, to keep it simple.
   [myCacheOfFruit setObject:@"Blueberry" forKey:@"favorite-fruit"];
   [myCacheOfFruit setObject:@"Durian" forKey:@"least-favorite-fruit"];
-  // Sure, we can retrieve them from the cache, if we know their key.
+  // Sure, we can retrieve them from the cache, if we know their keys.
   id goodFruit = [myCacheOfFruit objectForKey:@"favorite-fruit"];
   id evilFruit = [myCacheOfFruit objectForKey:@"least-favorite-fruit"];
   // But NSCache wouldn't let us do this!
