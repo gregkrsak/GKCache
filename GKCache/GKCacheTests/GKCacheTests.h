@@ -41,6 +41,10 @@
 
 #define msg_CanSetObjectForKeyWithCostInSelfAndRetrieveFromIterableCollection @"(iterableCollection property should contain added object following setValue:forKey:cost:)"
 
+#define msg_CanSetFiveObjectsInSelfAndFastEnumerateFiveObjectsFromIterableCollection @"(iterableCollection property should contain five objects valued from 0 - 4)"
+
+#define msg_CanSetFiveObjectsInSelfThenRemoveOneAndFastEnumerateFourObjectsFromIterableCollection @"(iterableCollection property should contain four objects valued from 0 - 3)"
+
 #define msg_CanRemoveObjectInSelfAndNotRetrieveFromIterableCollection @"(iterableCollection property should not contain removed object following removeObjectForKey:)"
 
 #define msg_CanRemoveAllObjectsInSelfAndNotRetrieveFromIterableCollection @"(iterableCollection property should be empty following removeAllObjects)"

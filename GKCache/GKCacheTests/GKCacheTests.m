@@ -98,6 +98,43 @@
   XCTAssertEqualObjects(actual, expected, msg_CanSetObjectForKeyWithCostInSelfAndRetrieveFromIterableCollection);
 }
 
+- (void)test_CanSetFiveObjectsInSelfAndFastEnumerateFiveObjectsFromIterableCollection
+{
+  self->_cacheUnderTest = [self->_cacheUnderTest init];
+  for (int x = 0; x < 5; x++)
+  {
+    [self->_cacheUnderTest setObject:[NSNumber numberWithInt:x] forKey:[NSString stringWithFormat:@"%d", x]];
+  }
+  int count = 0;
+  for (NSNumber* n in self->_cacheUnderTest.iterableCollection)
+  {
+    BOOL valueIsCorrect = ([n intValue] >= 0) && ([n intValue] < 5) ? YES : NO;
+    BOOL countIsCorrect = (count >= 0) && (count < 5) ? YES : NO;
+    XCTAssertTrue(valueIsCorrect, msg_CanSetFiveObjectsInSelfAndFastEnumerateFiveObjectsFromIterableCollection);
+    XCTAssertTrue(countIsCorrect, msg_CanSetFiveObjectsInSelfAndFastEnumerateFiveObjectsFromIterableCollection);
+    count++;
+  }
+}
+
+- (void)test_CanSetFiveObjectsInSelfThenRemoveOneAndFastEnumerateFourObjectsFromIterableCollection
+{
+  self->_cacheUnderTest = [self->_cacheUnderTest init];
+  for (int x = 0; x < 5; x++)
+  {
+    [self->_cacheUnderTest setObject:[NSNumber numberWithInt:x] forKey:[NSString stringWithFormat:@"%d", x]];
+  }
+  [self->_cacheUnderTest removeObjectForKey:@"4"];
+  int count = 0;
+  for (NSNumber* n in self->_cacheUnderTest.iterableCollection)
+  {
+    BOOL valueIsCorrect = ([n intValue] >= 0) && ([n intValue] < 4) ? YES : NO;
+    BOOL countIsCorrect = (count >= 0) && (count < 4) ? YES : NO;
+    XCTAssertTrue(valueIsCorrect, msg_CanSetFiveObjectsInSelfThenRemoveOneAndFastEnumerateFourObjectsFromIterableCollection);
+    XCTAssertTrue(countIsCorrect, msg_CanSetFiveObjectsInSelfThenRemoveOneAndFastEnumerateFourObjectsFromIterableCollection);
+    count++;
+  }
+}
+
 - (void)test_CanRemoveObjectInSelfAndNotRetrieveFromIterableCollection
 {
   self->_cacheUnderTest = [self->_cacheUnderTest init];
