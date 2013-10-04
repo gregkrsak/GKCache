@@ -27,15 +27,13 @@ Installation (recommended method)
 
 ![Image: Console output](https://drive.google.com/uc?export=view&id=0B15HSB1iaOZ2b1JjT0pTaU1zQWs "Oohh.. red. Ahh.")
 
-- Drag GKCache.xcodeproj into your Xcode project
+- Drag GKCache.h and GKCache.m into your Xcode project
 
-![Image: Dragging the subproject into Xcode](https://drive.google.com/uc?export=view&id=0B15HSB1iaOZ2YUt2LUw2MEEtSmM "Be sure you grab the GKCache project file, and not an operating system folder.")
+![Image: Dragging the source files into Xcode](https://drive.google.com/uc?export=view&id=0B15HSB1iaOZ2SlU4MWkxOUpRWDA "Be sure you grab the GKCache source files directly, and not an operating system folder.")
 
-- Point your project to the new files
+- Unselect "Copy items into destination group's folder", and click Finish. 
 
-![Image: Adding the library to your project](https://drive.google.com/uc?export=view&id=0B15HSB1iaOZ2OEVMdVpia1JsRVE "Link your project binary with the GKCache library.")
-
-![Image: Modifying your project's User Headers search path](https://drive.google.com/uc?export=view&id=0B15HSB1iaOZ2UXRFREl4YzJ5VTg "Modify your User Headers search path, if desired.")
+![Image: Confirm you want to add the source files](https://drive.google.com/uc?export=view&id=0B15HSB1iaOZ2WVhUWjFxNGM3Q1k "Just add the source files to your target; there's no need to copy.")
 
 - Finally, `#import "GKCache/GKCache.h"`
 
