@@ -89,5 +89,4 @@ Additional resources
   [Download GitHub for Mac]: http://mac.github.com/
   [Download Git for Linux]: http://git-scm.com/download/linux
 
-[![Bitdeli Badge](https://d2weczhvl823v0.cloudfront.net/gregkrsak/gkcache/trend.png)](https://bitdeli.com/free "Bitdeli Badge")
 
