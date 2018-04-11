@@ -2,7 +2,7 @@ GKCache
 =======
 
 
-[![Objective-C](https://img.shields.io/badge/language-objective%2dc-blue.svg)](https://github.com/gregkrsak/GKCache/blob/master/GKCache/GKCache/GKCache.m)
+[![Objective-C](https://img.shields.io/badge/language-objective--c-blue.svg)](https://github.com/gregkrsak/GKCache/blob/master/GKCache/GKCache/GKCache.m)
 
 
 This is an iterable subclass of NSCache.
